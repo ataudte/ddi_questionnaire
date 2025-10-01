@@ -40,6 +40,7 @@ This document serves as an inspiration for a DNS, DHCP, and IPAM (DDI) evaluatio
 - [Appendix](#appendix)
   - [Footnotes](#footnotes)
 </details>
+
 # Weighting of Requirements
 
 - must-have (critical to meet the requirements)
