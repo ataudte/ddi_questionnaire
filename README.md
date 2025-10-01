@@ -222,7 +222,7 @@ This document serves as an inspiration for a DNS, DHCP, and IPAM (DDI) evaluatio
   - management of DNS updates (DDNS)
   - management of zone transfers (AXFR & IXFR)
   - management of ACLs for dynamic DNS & zone transfers
-  - management of forwarding and stub zones (selective/conditional     forwarding)
+  - management of forwarding and stub zones (selective/conditional forwarding)
   - management of delegations within the environment
   - management of delegations to non-managed party server
   - management of hidden primary DNS server
@@ -277,7 +277,7 @@ This document serves as an inspiration for a DNS, DHCP, and IPAM (DDI) evaluatio
 ## Requirements for DNSSEC Management
 
 - hosting provider supports DNSSEC-enabled zones
-  - incl. record types of RFC 4034 (DNSKEY, RRSIG, NSEC, DS), RFC 5155 (NSEC3), RFC 7671 (TLSA) & RFC 8078 (CDS/CDNSKEY)
+  - incl. record types of RFC 4034 (`DNSKEY`, `RRSIG`, `NSEC`, `DS`), RFC 5155 (`NSEC3`), RFC 7671 (`TLSA`) & RFC 8078 (`CDS/DNSKEY`)
 - hosting provider can enable DNSSEC signing per zone
 - IPAM instance can enable DNSSEC validation per server
 - validation of non-managed signed zones can be disabled (negative trust anchors)
@@ -315,7 +315,7 @@ This document serves as an inspiration for a DNS, DHCP, and IPAM (DDI) evaluatio
 - existing leases can be deleted and freed in the web UI
 - expiration or deletion of lease triggers removal of associated entities (dynamic DNS)
 - service instance supports generation of hostnames for clients not sending a name
-- leases can be assigned based on MAC address or client ID (dhcp-client-identifier)
+- leases can be assigned based on MAC address or client ID (`dhcp-client-identifier`)
 - service instance supports one lease per client
 - ping-before-assign functionality can be managed in web UI
 - service instance supports legacy implementations (BOOTP, etc.)
@@ -352,18 +352,18 @@ This document serves as an inspiration for a DNS, DHCP, and IPAM (DDI) evaluatio
 
 - web UI allows management of private IPv4 address space (RFC 1918)
 - web UI allows management of public IPv4 address space
-- web UI allows management of multicast IPv4 address space (224.0.0.0/4)
+- web UI allows management of multicast IPv4 address space (`224.0.0.0/4`)
 - web UI support the allocation of next available IPv4 address range
 - web UI support the allocation of next available IPv4 address network
 - web UI support the allocation of next available IPv4 address
 - web UI support the allocation of next available IPv4 address from offset
 - web UI support the allocation of next available IPv4 address within specific range
-- web UI support the management of unique local address (ULA) ranges (fc00::/7)
-- web UI support the management of global unicast address (GUA) ranges (2000::/3)
-- web UI support the management of multicast IPv6 ranges (ff00::/8)
+- web UI support the management of unique local address (ULA) ranges (`fc00::/7`)
+- web UI support the management of global unicast address (GUA) ranges (`2000::/3`)
+- web UI support the management of multicast IPv6 ranges (`ff00::/8`)
 - web UI prevents or warns about reserved address ranges (TEREDO, 6to4, etc.)
-- link-local addresses (FE80::/10) can be documented in web UI
-- web UI is able to restrict allowed subnet sizes (e.g. /24 for IPv4, /64 for IPv6)
+- link-local addresses (`fe80::/10`) can be documented in web UI
+- web UI is able to restrict allowed subnet sizes (e.g. `/24` for IPv4, `/64` for IPv6)
 - web UI support the allocation of next available IPv6 address range
 - web UI support the allocation of next available IPv6 address network
 - web UI support the allocation of next available IPv6 address
